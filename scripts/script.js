@@ -1,8 +1,6 @@
 //get two buttons with id btn1,btn2
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
-let song = new Audio();
-
 
 btn1.addEventListener("click", neverGonnaGiveYouUp)
 btn2.addEventListener("click", superIdol)
@@ -17,19 +15,22 @@ superIdolGif.classList.add("gif")
 
 
 
+let rickrollSong = new Audio("./contents/neverGonnaGiveYouUp.mp3");
+let superIdolSong = new Audio("./contents/superIdol.mp3");
 
 
 function neverGonnaGiveYouUp() {
-	song.pause();
-	song = new Audio("./contents/neverGonnaGiveYouUp.mp3");
-	song.play();
+	superIdolSong.pause();
+	rickrollSong.currentTime = 0;
+	rickrollSong.play();
 	document.body.appendChild(neverGonnaGiveYouUpGif);
 }
 
 function superIdol() {
-	song.pause()
-	song = new Audio("./contents/superIdol.mp3");
-	song.play();
+	rickrollSong.pause();
+	superIdolSong.currentTime = 0;
+	superIdolSong.play();
+
 	document.body.appendChild(superIdolGif);
 }
 
