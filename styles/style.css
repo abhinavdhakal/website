@@ -4,7 +4,16 @@ body {
   padding: 0;
 }
 body {
-  background-color: #1d2021;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+  /* 
+   * hex for black and red is #000 and #f00 respectively
+   
+  background: linear-gradient(to left, #000 0%, #000 50%, #f00 50%, #f00 100%);
+*/
+background-color: black;
+
   color: #8ec07c;
 }
 .container {
@@ -15,20 +24,8 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
-.box{
-	color: #d79921;
-	background-color: #282828;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 40%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.box .buttons .btn{
+.buttons .btn{
   background-color: #8ec07c;
   color: #1d2021;
   text-decoration: none;
@@ -59,5 +56,11 @@ body {
   z-index: 1;
   margin: auto;
 
+}
+
+#literallyMe{
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
 
